@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="/static-assets/scripts/login-redirect.js"></script>
+  <script type="module" src="/static-assets/scripts/landing-page-v2-script.js"></script>
+  <script type="module" src="/static-assets/scripts/footer-v2-script.js"></script>
+  <meta charset="utf-8" />
+  <link rel="manifest" href="/static-assets/pwa-manifest.json" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Promunim Billing </title>
+  <meta name="description"
+    content="Best GST Billing Software in India for Small Businesses. 1Cr+ Businesses created GST invoices with myBillBook GST invoicing software. Free Online Billing Software built for Bharat." />
+  <meta name="google-site-verification" content="IKz7JJ_CT1ei3Myf6lYTJWq27xTfjzUxspXcVS-kMnQ" />
+  <meta name="keywords"
+    content="billing software, billing software free, billing software for pc, best billing software in India, online billing software, invoicing software, gst invoicing software, gst billing software, tally alternative" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="index.html" />
+  <link rel="preconnect" href="https://cdn.branch.io" />
+  <link rel="preconnect" href="https://cdn.amplitude.com" />
+  <link rel="preconnect" href="https://cdn.rudderlabs.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script type="text/javascript">
+    // amplitude.getInstance().init("API_KEY");
+  </script>
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="icon" type="image/x-icon" href="/static-assets/favicon.png" />
+  <script src="https://js.pusher.com/5.1/pusher.min.js" async></script>
+  <script>
+    var domain = window.location.host;
+    if (domain == "niobooks.in") {
+      document.head.insertAdjacentHTML(
+        "beforeEnd",
+        '<meta name="robots" content="noindex" />'
+      );
+    }
+  </script> 
+  <link rel="stylesheet" href="/static-assets/styles/landing-page-styles.css" />
+  <link rel="stylesheet" href="/static-assets/styles/common.css" />
+  <!-- Start VWO Async SmartCode -->
+  <link rel="preconnect" href="" />
+  <!-- End VWO Async SmartCode -->
+</head>
+
+<body onload="bodyload()" id="page-container" class="landing-page-v2">
+  <div id="accounting-container-v2">
+    <div class="mobile-floating-cta">
+      <a id="playstore-link-ab-test-mobile" class="mobile-cta-links" target="_blank"
+        onclick="ctaAppDownload(); showLoginEvent('Playstore', '', 'main', 'sticky_button')">
+        <img src="\assets\img\pngegg-01.png" alt="Play Store" />
+      </a>
+      <a class="mobile-cta-links" target="_blank"
+        onclick="ctaAppDownload(); showLoginEvent('appstore', '', 'main', 'sticky_button')">
+        <img width="10" src="\assets\img\pngegg-02 (1).png" alt="Apple Store" />
+      </a>
+    </div>
+
+    <!-- ************header*************** -->
+
+    <div id="header" class="header-container">
+
+      <div class="header-section d-flex justify-content-space-between align-items-center">
+        <div class="header-options">
+          <div class="cursor-pointer d-flex align-items-center" onclick="navigateToHome()">
+            <a href="index.html">
+              <img src="\assets\img\Logo-01.png" alt="myBillBook logo" height="52px" width="126" />
+            </a>
+          </div>
+          <div class="header-options-divider"></div>
+          <div class="header-options-container" id="hamburger-container">
+            <div class="dropdown d-sm-none">
+              <button class="dropdown-btn">
+                <span>Features</span>
+                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.51342 5.12231C5.7128 4.89453 5.906 4.67051 6.10206 4.45025C7.18369 3.23345 8.26437 2.01665 9.34886 0.803614C9.53778 0.592487 9.74097 0.398014 9.93798 0.196557C9.96368 0.170233 9.99413 0.149819 10.0213 0.125107C10.1973 -0.0360586 10.3881 -0.0274631 10.5813 0.0713851C10.9087 0.238997 11.0591 0.589801 10.9787 0.976061C10.9606 1.06363 10.9211 1.13347 10.8669 1.19686C10.4657 1.66639 10.0703 2.14236 9.66388 2.60598C8.89203 3.48595 8.11733 4.36269 7.33787 5.23406C6.90246 5.72078 6.45753 6.19621 6.01307 6.67273C5.92694 6.76513 5.82844 6.84625 5.72755 6.91877C5.55481 7.04341 5.37494 7.01816 5.21981 6.88708C5.05992 6.7517 4.91097 6.59752 4.76822 6.43904C3.8184 5.38018 2.86953 4.32132 1.92542 3.25602C1.40102 2.66454 0.886134 2.06178 0.369823 1.46117C0.277507 1.35373 0.19899 1.23124 0.114286 1.11574C-0.0398932 0.90676 -0.024189 0.680053 0.0790729 0.459794C0.205176 0.190647 0.405515 0.0294816 0.681038 0.00262068C0.79001 -0.00812369 0.886134 0.0359282 0.96608 0.109527C1.145 0.274453 1.32678 0.437231 1.49143 0.619348C2.3161 1.53369 3.13601 2.45341 3.95592 3.37259C4.46033 3.93828 4.96189 4.5072 5.46488 5.0745C5.4763 5.08739 5.4901 5.09921 5.51342 5.12231Z"
+                    fill="white" />
+                </svg>
+
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="navLinkClicked(2); pushEvent('header','Customised Invoices', 'Features')">Fully customisable
+                  billing</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="featureClicked('feature-biling'); navLinkClicked(4);  pushEvent('header','All-in-one Billing', 'Features')">All
+                  Billing Features</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="featureClicked('feature-inventory-management'); navLinkClicked(4);  pushEvent('header','Inventory Management', 'Features')">Manage
+                  your business in clicks</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="featureClicked('feature-business-management'); navLinkClicked(4); pushEvent('header','Business Management', 'Features')">Super-simple
+                  GST Filing, E-invoicing</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="navLinkClicked(5); pushEvent('header','e-Invoicing & e-Way Billing', 'Features')">Grow your
+                  sales with Business</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#"
+                  onclick="navLinkClicked(6); pushEvent('header','Online Marketing', 'Features')">Marketing Bonus
+                  Features</a>
+
+              </div>
+            </div>
+            <a href="#" class="header-link cursor-pointer dropdown-btn d-md-none"
+              onclick="navLinkClicked(4); pushEvent('d_landing_click','Features');">
+              Features
+            </a>
+            <a href="https://staging.promunim.com/pricing" class="header-link cursor-pointer dropdown-btn">Pricing</a>
+            <div class="dropdown">
+              <button class="dropdown-btn">
+                <span>Knowledge Centre</span>
+                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.51342 5.12231C5.7128 4.89453 5.906 4.67051 6.10206 4.45025C7.18369 3.23345 8.26437 2.01665 9.34886 0.803614C9.53778 0.592487 9.74097 0.398014 9.93798 0.196557C9.96368 0.170233 9.99413 0.149819 10.0213 0.125107C10.1973 -0.0360586 10.3881 -0.0274631 10.5813 0.0713851C10.9087 0.238997 11.0591 0.589801 10.9787 0.976061C10.9606 1.06363 10.9211 1.13347 10.8669 1.19686C10.4657 1.66639 10.0703 2.14236 9.66388 2.60598C8.89203 3.48595 8.11733 4.36269 7.33787 5.23406C6.90246 5.72078 6.45753 6.19621 6.01307 6.67273C5.92694 6.76513 5.82844 6.84625 5.72755 6.91877C5.55481 7.04341 5.37494 7.01816 5.21981 6.88708C5.05992 6.7517 4.91097 6.59752 4.76822 6.43904C3.8184 5.38018 2.86953 4.32132 1.92542 3.25602C1.40102 2.66454 0.886134 2.06178 0.369823 1.46117C0.277507 1.35373 0.19899 1.23124 0.114286 1.11574C-0.0398932 0.90676 -0.024189 0.680053 0.0790729 0.459794C0.205176 0.190647 0.405515 0.0294816 0.681038 0.00262068C0.79001 -0.00812369 0.886134 0.0359282 0.96608 0.109527C1.145 0.274453 1.32678 0.437231 1.49143 0.619348C2.3161 1.53369 3.13601 2.45341 3.95592 3.37259C4.46033 3.93828 4.96189 4.5072 5.46488 5.0745C5.4763 5.08739 5.4901 5.09921 5.51342 5.12231Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <div class="dropdown-menu" id="knowledge-center-menu">
+                <a class="dropdown-item header-link cursor-pointer" href="">Blogs</a>
+                <a class="dropdown-item header-link cursor-pointer"
+                  href="https://staging.promunim.com/services">Services</a>
+              </div>
+            </div>
+            <div class="mobile-cta">
+              <a href="talk-to-sales.html"> <button>
+                  Talk to Sales
+                </button></a>
+            </div>
+            <div class="mobile-cta">
+              <button class="create-account-button" onclick="navigateToCreateAccount()">
+                Create Account
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header-options-hamburger" onclick="onClickHamburger()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-card-list"
+            viewBox="0 0 16 16">
+            <path
+              d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+            <path
+              d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+          </svg>
+        </div>
+        <div class="header-actions" id="headerActions">
+          <a href="https://webdeveloperkomal.github.io/promunim-billing1/talktosale.html"> <button onclick="bookDemo()"
+              class="header-btn trial-button">
+              Talk to Sales
+            </button></a>
+          <a href="https://webdeveloperkomal.github.io/promunim-billing1/login.html"> <button
+              class="header-btn login-button"
+              onclick="showLogin(false); showLoginEvent('Login/Register', 'login',trackingEventAttributeType, 'login')">
+              Login
+            </button></a>
+        </div>
+        <div class="header-actions-ab" id="headerActionsAB">
+          <button onclick="bookDemo()" class="header-btn empty-button">
+            Contact Sales
+          </button>
+          <button class="header-btn empty-button"
+            onclick="showLogin(false); showLoginEvent('Login/Register', 'login',trackingEventAttributeType, 'login')">
+            Login
+          </button>
+          <button class="header-btn login-button" onclick="navigateToCreateAccount()">
+            Start Free Billing
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ************header*************** -->
+
+    <div id="body" class="main-content">
+      <!-- Hero -->
+      <section id="hero" class="section-container hero-section">
+        <div class="hero-container">
+          <div class="hero-container-column-1" id="heroContainerColumn1">
+            <p style="color: #3BB161; font-size: 28px; font-weight: 700; margin-top: -154px;"> ProBilling</p>
+            <div class="gst-billing1"> a simple and effective web-based solution for</div>
+            <!-- <div class="simple-smart1"> </div> -->
+            <h4 class="gst-billing">
+              GST Billing, Accounting and <br>
+              Stock Management Software in India
+            </h4>
+            <div class="small-business">
+              <span class=" gst-billing2">ProBilling is the top GST billing software utilized by <br>
+                over 18,000 small businesses for customized forms.
+            </div>
+            <div class="input-button-container">
+              <input type="number" class="form-control" placeholder="Enter number" maxlength="10" id="phone_number_1" />
+              <div class="country-code-placeholder">+91 -</div>
+              <button class="log-reg-btn">
+
+                <svg width="18" height="27" viewBox="0 0 18 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.1027 13.7877C12.5532 13.3196 12.0128 12.866 11.4815 12.4057C8.54618 9.86621 5.61088 7.32898 2.68466 4.7828C2.17536 4.33926 1.70623 3.86221 1.22025 3.39967C1.15675 3.33934 1.1075 3.26784 1.04789 3.20416C0.659109 2.79078 0.679844 2.34277 0.918297 1.88917C1.32263 1.12052 2.16888 0.767471 3.10065 0.956283C3.31189 0.998738 3.48036 1.09147 3.63328 1.21883C4.76593 2.16066 5.91413 3.08908 7.03253 4.0432C9.15527 5.85535 11.2702 7.6742 13.3723 9.50423C14.5464 10.5265 15.6933 11.5711 16.8428 12.6146C17.0657 12.8168 17.2614 13.0481 17.4363 13.2849C17.737 13.6905 17.6761 14.1128 17.3598 14.477C17.0333 14.8524 16.6613 15.2021 16.279 15.5373C13.7247 17.7673 11.1705 19.995 8.60061 22.2116C7.17378 23.4428 5.71974 24.6517 4.27089 25.8639C4.0117 26.0806 3.71622 26.265 3.4376 26.4638C2.93348 26.8258 2.38659 26.7889 1.85526 26.5465C1.20599 26.2504 0.817214 25.7801 0.752417 25.1332C0.726498 24.8773 0.832765 24.6517 1.01031 24.464C1.40816 24.0439 1.80083 23.6171 2.24015 23.2305C4.44584 21.2944 6.66448 19.3694 8.88183 17.4444C10.2465 16.2601 11.6188 15.0826 12.9874 13.9017C13.0185 13.8748 13.047 13.8424 13.1027 13.7877Z"
+                    fill="white" />
+                </svg>
+
+              </button>
+              <img class="hero-mobile-web1" src="\assets\img\Group 34.png" alt="GST billing software for PC and Mac" />
+              <img class="hero-mobile-web" src="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png"
+                alt="GST billing software for PC and Mac" />
+            </div>
+            <div class="ratings">
+              <img width="110" src="\assets\img\pngegg-02 (1).png" alt="4.7+ Google Play Store Rating">
+              <div class="ratings-divider"></div>
+              <img width="110" src="\assets\img\pngegg-01.png" alt="4.6+ App Store Rating">
+
+              <!-- <div class="ratings-divider"></div>
+                <img width="120" src="/static-assets/images/landing-page-v2/iso-certified.png" alt="ISO Certified Billing App" > -->
+            </div>
+
+            <div class="ratings1">
+              <p>RATING <br> <span style="font-size: 18px; margin-left: 5%; color:  black; margin-top: 20px;">4.5</span>
+              </p>
+              <div class="ratings1-divider"></div>
+              <div id="verticle-line"></div>
+              <p>DOWNLOADS <br> <span style="font-size: 18px; color: black; margin-left: 15%;">900+</span></p>
+            </div>
+            <img class="hero-mobile-img" src="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png"
+              alt="billing software for pc and mac" />
+          </div>
+
+          <div class="hero-container-column-1-ab" id="heroContainerColumn1AB">
+            <h1 class="gst-billing">
+              Try India’s best Billing & Invoicing software
+            </h1>
+            <div class="small-business">
+              <span class="color-brand">Trusted by <span class="color-brand text-semi-bold">1 Cr+ businesses</span> for
+                simplifying GST filing and <span class="color-brand text-semi-bold">5 star</span> customer support
+              </span>
+            </div>
+            <div class="input-button-container">
+              <button id="main-cta-hero-section" class="log-reg-btn" onclick="
+                    showLogin(true, 'phone_number_1');
+                    showLoginEvent('Login/Register', 'first_fold',trackingEventAttributeType, 'first_fold')
+                  ">
+                Start Free Billing
+                <img src="/static-assets/icons/ic-arrow-narrow-right.svg" width="20" height="20" alt="Arrow Right" />
+              </button>
+              <img class="hero-mobile-web" src="\assets\img\Group 34.png" alt="GST billing software for PC and Mac" />
+            </div>
+            <span class="pricing-plan-cta-text">✓ Paid plans starting from <a
+                href="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png">₹34/month</a></span>
+            <div class="ratings">
+              <img width="110" src="\assets\img\pngegg-02 (1).png" alt="4.7+ Google Play Store Rating">
+              <div class="ratings-divider"></div>
+              <img width="110" src="\assets\img\pngegg-01.png" alt="4.6+ App Store Rating">
+              <!-- <div class="ratings-divider"></div>
+                <img width="120" src="/static-assets/images/landing-page-v2/iso-certified.png" alt="ISO Certified Billing App" > -->
+            </div>
+            <img class="hero-mobile-img" src="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png"
+              alt="billing software for pc and mac" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Super Power Section -->
+      <section id="super-power" class="section-container super-power-section">
+        <div class="super-power-container">
+          <div class="super-power-container-header-container">
+            <h2 class="super-power-container-header">
+              <span class="color-brand">A Complete platform for all of your Business Needs</span>
+            </h2>
+            <!-- <h2 class="super-power-container-header">
+                <span class="color-brand">All</span> your business needs
+              </h2> -->
+            <div class="super-power-container-sub-header">
+              Developed and designed for Startups, Micro, Small and medium size businesses.
+            </div>
+          </div>
+        </div>
+
+        <!-- <section id="hero" class="section-container hero-section"> -->
+        <div class="div01">
+          <img  loading="lazy" src="\assets\img\screen mockup 3.png" class="img" />
+
+          <img loading="lazy" src="\assets\img\Rectangle.png" class="img1" />
+          <style>
+
+          </style>
+
+        </div>
+
+
+   
+
+        <!-- </section> -->
+
+        <!-- <div class="super-power-video-container" onclick="unmuteVideoIfPossible()">
+            <video 
+              id="super-power-video"
+              loop
+              type="video/mp4"
+              preload="none"
+              playsinline
+              muted
+            ></video>
+            <div id="super-power-video-intersector"></div>
+            <div class="super-power-video-overlay"></div>
+            <div class="super-power-video-control">
+              <img height="24" width="24" id="super-power-video-control-vol" src="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png" alt="mute" onclick="onClickVolumeControl(); event.stopPropagation();" loading="lazy">
+              <img class="super-power-video-control-play" src="\assets\img\0c49577caf3809c0fc7234f16ac79a0e.png" alt="Play" onclick="videoPlayClick()" loading="lazy">
+              <img class="super-power-video-control-pause" src="/static-assets/images/landing-page-v2/pause.webp" alt="Pause" onclick="videoPauseClick()" loading="lazy">
+            </div>
+          </div> -->
+      </section>
+
+      <section id="super-power" class="section-container super-power-section1">
+        <div class="super-power-container">
+          <div class="super-power-container-header-container">
+            <h2 class="super-power-container-header">
+              <span class="color-brand">Including Your Brand, Your Bill, and More!</span>
+            </h2>
+            <!-- <h2 class="super-power-container-header">
+                <span class="color-brand">All</span> your business needs
+              </h2> -->
+            <div class="super-power-container-sub-header">ProBilling is the only platform that offers fully configurable GST and non-GST invoicing with a variety of 
+              theme options.</div>
+          </div>
+        </div>
+        <div class="div02">
+          <div class="prints">
+          <div style="border: 1px solid #bdbcbc; padding-left: 17px; padding-top: 1%;  height: 50px;  border-radius: 11px; background-color: #ffffff;">
+            <button class="btn1" onclick="toggleDocument('thermalPrints')">Thermal Prints</button>
+            <button class="btn1" onclick="toggleDocument('a4Prints')">A4 Prints</button>
+            <button class="btn1" onclick="toggleDocument('a5Prints')">A5 Prints</button>
+          </div>
+         <div id="thermalPrints" class="document-container">
+          <img data-platform="desktop" class="prints-img1" src="\assets\img\Frame 49.png" alt="Thermal Print in Billing Software"  />
+        </div>
+
+        <div id="a4Prints" class="row  document-container">
+          <img data-platform="desktop" class="prints-img2" src="\assets\img\image 1.png" alt="A4 Prints"  />
+          <img data-platform="desktop" class="prints-img3" src="\assets\img\image 1.png" alt="A4 Prints"  />
+        </div>
+
+        <div id="a5Prints" class="document-container">
+          <img data-platform="desktop" class="prints-img4" src="\assets\img\Frame 50.png" alt="A5 Prints"  />
+          <img data-platform="desktop" class="prints-img5" src="\assets\img\Frame 50.png" alt="A5 Prints"  />
+        </div>
+        </div>
+          <img  loading="lazy" src="\assets\img\circleLeft.png" class="img01" />
+          <img loading="lazy" src="\assets\img\circleRight.png" class="img02" />
+        </div>
+      </section>
+
+      <section id="super-power" class="section-container super-power-section1">
+        
+        <div class="boundaries">
+          <div class="super-power-container-boundaries">
+            <div class="super-power-container-header-container-boundaries">
+              <h2 class="super-power-container-header-boundaries">
+                <span class="color-brand">Without limitations, without boundaries!</span>
+              </h2>
+              <div class="super-power-container-sub-header-boundaries">The best billing and accounting software is available for businesses to efficiently manage their finances. <br> Experience the trans-formative impact of ProBillings multi-faceted functionality for your business!"</div>
+              <div class="super-power-container-sub-header-boundaries"></div>
+            </div>
+          </div>
+          <button class="boundaries-btn">Get Started 
+            
+          </button>
+       </div>
+      </section>
+    
+      <section id="super-power" class="section-container super-power-section1">
+        <div class="super-power-container">
+          <div class="super-power-container-header-container">
+            <h2 class="super-power-container-header">
+              <span class="color-brand" style="margin-top: -50px;">GST Compliance has never been this easy</span>
+            </h2>
+          </div>
+        </div>
+         <div class="Compliance">
+        <div class="Compliance-2">
+          <div class="Compliance-3">
+            <div class="column">
+              <div class="Compliance-4">
+                <div onclick="showDiv(1)"  class="Compliance-5">GSTR Filing</div>
+                <div onclick="showDiv(2)" class="Compliance-6">E-Invoicing</div>
+                <div onclick="showDiv(3)" class="Compliance-7">E-way Billing</div>
+                <div onclick="showDiv(4)" class="Compliance-8">Data Export to Tally</div>
+              </div>
+            </div>
+
+
+            <div class="column-2" id="div1">
+              <div class="Compliance-9">
+                <img
+                  loading="lazy"
+                  src="\assets\img\image 1.png"
+                  class="Compliance-img"
+                />
+                <div class="Compliance-10">
+                  <div class="Compliance-11">
+                    Export your GSTR1 data in a simple format (JSON) and easily file
+                    your GST returns
+                    <br />
+                    for hassle-free accounting.
+                  </div>
+                  <div class="Compliance-12">
+                    <div class="dCompliance iv-13">Get Started</div>
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                      class="Compliance-img2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-2" id="div2" style="display: none;">
+              <div class="Compliance-9">
+                <img
+                  loading="lazy"
+                  src="\assets\img\Screenshot 2024-04-25 182918.png"
+                  class="Compliance-img"
+                />
+                <div class="Compliance-10">
+                  <div class="Compliance-11">
+                  Efficiently generate e-Invoices in a single click with automatic GATR1 reconciliation ,
+                   and conveniently cancel e-Invoices directly through myBillBook for seamless e-Invoicing.
+                  </div>
+                  <div class="Compliance-12">
+                    <div class="dCompliance iv-13">Get Started</div>
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                      class="Compliance-img2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-2" id="div3" style="display: none;">
+              <div class="Compliance-9">
+                <img
+                  loading="lazy"
+                  src="\assets\img\Frame 491.png"
+                  class="Compliance-img"
+                />
+                <div class="Compliance-10">
+                  <div class="Compliance-11">
+                    Easily generate and download E-way bills in less then  30 seconds by adding vehicle details for smooth transportation.
+                   
+                  </div>
+                  <div class="Compliance-12">
+                    <div class="dCompliance iv-13">Get Started</div>
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                      class="Compliance-img2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-2" id="div4" style="display: none;">
+              <div class="Compliance-9">
+                <img
+                  loading="lazy"
+                  src="\assets\img\Screenshot 2024-04-25 183006.png"
+                  class="Compliance-img"
+                />
+                <div class="Compliance-10">
+                  <div class="Compliance-11">
+                    Export your GSTR1 data in a simple format (JSON) and easily file
+                    your GST returns
+                    <br />
+                    for hassle-free accounting.
+                  </div>
+                  <div class="Compliance-12">
+                    <div class="dCompliance iv-13">Get Started</div>
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                      class="Compliance-img2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        </div>
+      </section>
+      <style>
+        .Compliance{
+          border-radius: 10px;
+          background-color: rgba(0, 76, 140, 0.1);
+          display: flex;
+          margin-top: 0px;
+          width: 100%;
+          max-width: 1316px;
+          flex-direction: column;
+          padding: 17px 35px 38px;
+        }
+        @media (max-width: 991px) {
+          .Compliance  {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+        }
+        .Compliance-2 {
+        }
+        @media (max-width: 991px) {
+          .Compliance-2 {
+            max-width: 100%;
+          }
+        }
+        .Compliance-3 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .Compliance-3 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 23%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .Compliance-4 {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+          font-size: 21px;
+          color: #414042;
+          font-weight: 600;
+          text-align: center;
+          line-height: 150%;
+        }
+        @media (max-width: 991px) {
+          .Compliance-4 {
+            margin-top: 21px;
+          }
+        }
+        .Compliance-5 {
+          font-family: Comfortaa, sans-serif;
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: rgba(59, 177, 97, 0.2);
+          align-items: center;
+          justify-content: center;
+          padding: 39px 60px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-5 {
+            padding: 0 20px;
+          }
+        }
+        .Compliance-6 {
+          font-family: Comfortaa, sans-serif;
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: #fff;
+          margin-top: 21px;
+          align-items: center;
+          white-space: nowrap;
+          justify-content: center;
+          padding: 40px 60px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-6 {
+            white-space: initial;
+            padding: 0 20px;
+          }
+        }
+        .Compliance-7 {
+          font-family: Comfortaa, sans-serif;
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: #fff;
+          margin-top: 21px;
+          align-items: center;
+          justify-content: center;
+          padding: 39px 60px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-7 {
+            padding: 0 20px;
+          }
+        }
+        .Compliance-8 {
+          font-family: Comfortaa, sans-serif;
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: #fff;
+          margin-top: 21px;
+          justify-content: center;
+          padding: 39px 33px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-8 {
+            padding: 0 20px;
+          }
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 77%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 100%;
+          }
+        }
+        .Compliance-9 {
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: #fff;
+          display: flex;
+          flex-grow: 1;
+          padding-top: 12px;
+          flex-direction: column;
+          width: 100%;
+        }
+        @media (max-width: 991px) {
+          .Compliance-9 {
+            max-width: 100%;
+            margin-top: 22px;
+          }
+        }
+        .Compliance-img {
+          aspect-ratio: 1.15;
+          object-fit: auto;
+          object-position: center;
+          width: 327px;
+          align-self: center;
+          max-width: 100%;
+        }
+        .Compliance-10 {
+          border-radius: 0px 0px 14.317px 14.317px;
+          background-color: rgba(59, 177, 97, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 18px 80px 6px 30px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-10 {
+            max-width: 100%;
+            padding: 0 20px;
+          }
+        }
+        .Compliance-11 {
+          color: #151515;
+          font: 500 19px/34px Comfortaa, sans-serif;
+        }
+        @media (max-width: 991px) {
+          .Compliance-11 {
+            max-width: 100%;
+          }
+        }
+        .Compliance-12 {
+          border-radius: 14.317px;
+          box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
+          background-color: #3bb161;
+          display: flex;
+          margin-top: 22px;
+          gap: 20px;
+          font-size: 21px;
+          color: #fff;
+          font-weight: 700;
+          line-height: 150%;
+          padding: 18px 31px;
+        }
+        @media (max-width: 991px) {
+          .Compliance-12 {
+            padding: 0 20px;
+          }
+        }
+        .Compliance-13 {
+          font-family: Comfortaa, sans-serif;
+          flex-grow: 1;
+          flex-basis: auto;
+          margin: auto 0;
+        }
+        .Compliance-img2 {
+          aspect-ratio: 0.68;
+          object-fit: auto;
+          object-position: center;
+          width: 17px;
+          fill: #fff;
+        }
+      </style>
+      
+
+      <section id="super-power" class="section-container super-power-section1">
+
+        <div class="super-power-container-pocket">
+          <div class="super-power-container-header-container-pocket">
+            <h2 class="super-power-container-header-pocket">
+              <span class="color-brand">Your Personal Marketing & Sales assistant, right in your pocket!</span>
+            </h2>
+            <div class="super-power-container-sub-header-pocket">Get more customers, get more from your customers</div>
+          </div>
+        </div>
+
+        <img src="assets/img/Group 755.png" alt="">
+
+        <!-- <div class="customers">
+          <div class="customers-2">
+            <div class="column">
+              <div class="customers-3">
+                <div class="customers-4">
+                  <div class="customers-5">
+                    <img
+                      loading="lazy"
+                      src=""
+                      class="customers-img"
+                    />
+                    <div class="customers-6">
+                      WhatsApp & SMS
+                      <br />
+                      Marketing
+                    </div>
+                  </div>
+                  <div class="customers-7">
+                    <img
+                      loading="lazy"
+                      srcset="..."
+                      class="customers-img1"
+                    />
+                    <div class="customers-8">
+                      Loyalty & Rewards
+                      <br />
+                      Program
+                    </div>
+                  </div>
+                </div>
+                <div class="customers-9">
+                  <div class="customers-10">
+                    <div class="column-2">
+                      <div class="dcustomersiv-11">
+                        <div class="customers-12">
+                          <img
+                            loading="lazy"
+                            srcset="..."
+                            class="customers-img2"
+                          />
+                          <div class="customers-13">Online Store & Digital Catalogue</div>
+                        </div>
+                        <div class="customers-14">
+                          <img
+                            loading="lazy"
+                            srcset="..."
+                            class="customers-img3"
+                          />
+                          <div class="customers-15">Service Reminders & CRM</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-3">
+                      <div class="customers-16">
+                        <div class="customers-17">
+                          <img
+                            loading="lazy"
+                            srcset="..."
+                            class="customers-img4"
+                          />
+                          <div class="customers-18">
+                            Personalized
+                            <br />
+                            Greetings
+                          </div>
+                        </div>
+                        <div class="customers-19">
+                          <img
+                            loading="lazy"
+                            srcset="..."
+                            class="customers-img5"
+                          />
+                          <div class="customers-20">Professional Business Cards</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-4">
+              <div class="customers-21">
+                <div class="customers-22">
+                  <img
+                    loading="lazy"
+                    srcset="..."
+                    class="customersimg"
+                  />
+                  <div class="customers-23">
+                    Loyalty & Rewards
+                    <br />
+                    Program
+                  </div>
+                </div>
+                <div class="customers-24">
+                  <img
+                    loading="lazy"
+                    srcset="..."
+                    class="customers-img6"
+                  />
+                  <div class="customers-25">
+                    Personalized
+                    <br />
+                    Greetings
+                  </div>
+                </div>
+                <div class="customers-26">
+                  <img
+                    loading="lazy"
+                    srcset="..."
+                    class="customers-img7"
+                  />
+                  <div class="customers-27">Professional Business Cards</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <style>
+          .customers {
+            border-radius: 10px;
+            background-color: rgba(59, 177, 97, 0.15);
+            margin-top: 44px;
+            width: 1316px;
+            max-width: 100%;
+            padding: 15px 49px 27px;
+          }
+          @media (max-width: 991px) {
+            .customers {
+              margin-top: 40px;
+              padding: 0 20px;
+            }
+          }
+          .customers-2 {
+            gap: 20px;
+            display: flex;
+          }
+          @media (max-width: 991px) {
+            .customers-2 {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 0px;
+            }
+          }
+          .column {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 76%;
+            margin-left: 0px;
+          }
+          @media (max-width: 991px) {
+            .column {
+              width: 100%;
+            }
+          }
+          .customers-3 {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+          }
+          @media (max-width: 991px) {
+            .customers-3 {
+              max-width: 100%;
+              margin-top: 40px;
+            }
+          }
+          .customers-4 {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            font-size: 20px;
+            color: #151515;
+            font-weight: 600;
+            line-height: 28px;
+          }
+          @media (max-width: 991px) {
+            .customers-4 {
+              max-width: 100%;
+              flex-wrap: wrap;
+            }
+          }
+          .customers-5 {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex: 1;
+          }
+          .customers-img {
+            aspect-ratio: 1;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-6 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .customers-7 {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex: 1;
+          }
+          .customers-8 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .customers-9 {
+            margin-top: 140px;
+          }
+          @media (max-width: 991px) {
+            .customers-9 {
+              max-width: 100%;
+              padding-right: 20px;
+              margin-top: 40px;
+            }
+          }
+          .customers-10 {
+            gap: 20px;
+            display: flex;
+          }
+          @media (max-width: 991px) {
+            .customers-10 {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 0px;
+            }
+          }
+          .column-2 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 62%;
+            margin-left: 0px;
+          }
+          @media (max-width: 991px) {
+            .column-2 {
+              width: 100%;
+            }
+          }
+          .customers-11 {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            font-size: 20px;
+            color: #151515;
+            font-weight: 600;
+            line-height: 28px;
+          }
+          @media (max-width: 991px) {
+            .customers-11 {
+              margin-top: 40px;
+            }
+          }
+          .customers-12 {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          .customers-img2 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-13 {
+            font-family: Comfortaa, sans-serif;
+            width: 254px;
+            margin: auto 0;
+          }
+          .customers-14 {
+            display: flex;
+            margin-top: 139px;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          @media (max-width: 991px) {
+            .customers-14 {
+              margin-top: 40px;
+            }
+          }
+          .customers-img3 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-15 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .column-3 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 38%;
+            margin-left: 20px;
+          }
+          @media (max-width: 991px) {
+            .column-3 {
+              width: 100%;
+            }
+          }
+          .customers-16 {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            font-size: 20px;
+            color: #151515;
+            font-weight: 600;
+            line-height: 28px;
+          }
+          @media (max-width: 991px) {
+            .customers-16 {
+              margin-top: 40px;
+            }
+          }
+          .customers-17 {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          .customers-img4 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-18 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .customers-19 {
+            display: flex;
+            margin-top: 139px;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          @media (max-width: 991px) {
+            .customers-19 {
+              margin-top: 40px;
+            }
+          }
+          .customers-img5 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-20 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .column-4 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 24%;
+            margin-left: 20px;
+          }
+          @media (max-width: 991px) {
+            .column-4 {
+              width: 100%;
+            }
+          }
+          .customers-21 {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            font-size: 20px;
+            color: #151515;
+            font-weight: 600;
+            line-height: 28px;
+          }
+          @media (max-width: 991px) {
+            .customers-21 {
+              margin-top: 40px;
+            }
+          }
+          .customers-22 {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          .customers-23 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .customers-24 {
+            display: flex;
+            margin-top: 140px;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          @media (max-width: 991px) {
+            .customers-24 {
+              margin-top: 40px;
+            }
+          }
+          .customers-img6 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-25 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+          .customers-26 {
+            display: flex;
+            margin-top: 139px;
+            gap: 20px;
+            justify-content: space-between;
+          }
+          @media (max-width: 991px) {
+            .customers-26 {
+              margin-top: 40px;
+            }
+          }
+          .customers-img7 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 65px;
+            border-radius: 10px;
+          }
+          .customers-27 {
+            font-family: Comfortaa, sans-serif;
+            margin: auto 0;
+          }
+        </style>
+        
+
+
+      </section>
+
+
+      <div class="login-backdrop d-none-imp" id="login_backdrop_id"></div>
+      <div id="login_container_id" class="login animate__animated animate__fadeInRightBig animate__faster d-none-imp">
+        <div class="login-icon-container">
+          <img data-src="/static-assets/images/landing-page/login.webp" height="24" onclick="login()" alt="login"
+            class="cursor-pointer" />
+        </div>
+      </div>
+
+      <script>
+        function toggleDocument(documentId) {
+          var documents = document.querySelectorAll('.document-container');
+          var buttons = document.querySelectorAll('.btn1');
+          
+          documents.forEach(function(document) {
+            document.classList.remove('active');
+          });
+          
+          buttons.forEach(function(button) {
+            button.classList.remove('active');
+          });
+          
+          var activeDocument = document.getElementById(documentId);
+          activeDocument.classList.add('active');
+          
+          var activeButton = document.querySelector('[onclick="toggleDocument(\'' + documentId + '\')"]');
+          activeButton.classList.add('active');
+        }
+
+            function showDiv(divNum) {
+        // Hide all divs
+        for (var i = 1; i <= 4; i++) {
+            document.getElementById('div' + i).style.display = 'none';
+        }
+
+        // Show the selected div
+        document.getElementById('div' + divNum).style.display = 'block';
+    }
+        </script>
+</body>
+
+</html>
