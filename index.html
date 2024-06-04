@@ -5,6 +5,7 @@
   <script src="static-assets/scripts/login-redirect.js"></script>
   <script type="module" src="static-assets/scripts/landing-page-v2-script.js"></script>
   <script type="module" src="static-assets/scripts/footer-v2-script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
   <meta charset="utf-8" />
   <link rel="manifest" href="static-assets/pwa-manifest.json" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,8 +25,8 @@
     // amplitude.getInstance().init("API_KEY");
   </script>
 
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-  <link rel="icon" type="image/x-icon" href="/static-assets/favicon.png" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
   <script src="https://js.pusher.com/5.1/pusher.min.js" async></script>
   <script>
     var domain = window.location.host;
@@ -35,10 +36,10 @@
         '<meta name="robots" content="noindex" />'
       );
     }
-  </script> 
+  </script>
   <link rel="stylesheet" href="static-assets/styles/landing-page-styles.css" />
   <link rel="stylesheet" href="static-assets/styles/common.css" />
-  
+
   <!-- Start VWO Async SmartCode -->
   <link rel="preconnect" href="" />
   <!-- End VWO Async SmartCode -->
@@ -69,7 +70,11 @@
             </a>
           </div>
           <div class="header-options-divider"></div>
+
           <div class="header-options-container" id="hamburger-container">
+
+            <a href="index.html" class="header-link cursor-pointer dropdown-btn">Home</a>
+
             <div class="dropdown d-sm-none">
               <button class="dropdown-btn">
                 <span>Features</span>
@@ -99,14 +104,16 @@
                 <a class="dropdown-item header-link cursor-pointer" href="#"
                   onclick="navLinkClicked(6); pushEvent('header','Online Marketing', 'Features')">Marketing Bonus
                   Features</a>
-
               </div>
             </div>
+
             <a href="#" class="header-link cursor-pointer dropdown-btn d-md-none"
               onclick="navLinkClicked(4); pushEvent('d_landing_click','Features');">
               Features
             </a>
-            <a href="https://staging.promunim.com/pricing" class="header-link cursor-pointer dropdown-btn">Pricing</a>
+
+            <a href="#" class="header-link cursor-pointer dropdown-btn">Pricing</a>
+
             <div class="dropdown">
               <button class="dropdown-btn">
                 <span>Knowledge Centre</span>
@@ -118,15 +125,18 @@
               </button>
               <div class="dropdown-menu" id="knowledge-center-menu">
                 <a class="dropdown-item header-link cursor-pointer" href="">Blogs</a>
-                <a class="dropdown-item header-link cursor-pointer"
-                  href="https://staging.promunim.com/services">Services</a>
+                <a class="dropdown-item header-link cursor-pointer" href="#">Services</a>
               </div>
             </div>
+
+            <a href="contactus.html" class="header-link cursor-pointer dropdown-btn">Contact Us</a>
+
             <div class="mobile-cta">
               <a href="talk-to-sales.html"> <button>
                   Talk to Sales
                 </button></a>
             </div>
+
             <div class="mobile-cta">
               <button class="create-account-button" onclick="navigateToCreateAccount()">
                 Create Account
@@ -144,8 +154,7 @@
           </svg>
         </div>
         <div class="header-actions" id="headerActions">
-          <a href="https://webdeveloperkomal.github.io/promunim-billing1/talktosale.html"> <button onclick="bookDemo()"
-              class="header-btn trial-button">
+          <a href="talk-to-sales.html"> <button onclick="bookDemo()" class="header-btn trial-button">
               Talk to Sales
             </button></a>
           <a href="https://webdeveloperkomal.github.io/promunim-billing1/login.html"> <button
@@ -168,6 +177,7 @@
         </div>
       </div>
     </div>
+
     <!-- ************header*************** -->
 
     <div id="body" class="main-content">
@@ -189,6 +199,8 @@
             <div class="input-button-container">
               <input type="number" class="form-control" placeholder="Enter number" maxlength="10" id="phone_number_1" />
               <div class="country-code-placeholder">+91 -</div>
+              <!-- <img src="assets/img/Rectangle 62.png" alt="" class="india"
+                  width="25.67px" height="19.97"> -->
               <button class="log-reg-btn">
 
                 <svg width="18" height="27" viewBox="0 0 18 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,20 +286,14 @@
 
         <!-- <section id="hero" class="section-container hero-section"> -->
         <div class="div01">
-          <img  loading="lazy" src="assets/img/screen mockup 3.png" class="img" />
-
+          <img loading="lazy" src="assets/img/screen mockup 3.png" class="img" />
           <img loading="lazy" src="assets/img/Rectangle.png" class="img1" />
           <style>
-
           </style>
 
         </div>
 
-
-   
-
         <!-- </section> -->
-
         <!-- <div class="super-power-video-container" onclick="unmuteVideoIfPossible()">
             <video 
               id="super-power-video"
@@ -307,7 +313,9 @@
           </div> -->
       </section>
 
+
       <section id="super-power" class="section-container super-power-section1">
+
         <div class="super-power-container">
           <div class="super-power-container-header-container">
             <h2 class="super-power-container-header">
@@ -316,54 +324,285 @@
             <!-- <h2 class="super-power-container-header">
                 <span class="color-brand">All</span> your business needs
               </h2> -->
-            <div class="super-power-container-sub-header">ProBilling is the only platform that offers fully configurable GST and non-GST invoicing with a variety of 
+            <div class="super-power-container-sub-header">ProBilling is the only platform that offers fully configurable
+              GST and non-GST invoicing with a variety of
               theme options.</div>
           </div>
         </div>
+
         <div class="div02">
           <div class="prints">
-          <div style="border: 1px solid #bdbcbc; padding-left: 17px; padding-top: 1%;  height: 50px;  border-radius: 11px; background-color: #ffffff;">
-            <button class="btn1" onclick="toggleDocument('thermalPrints')">Thermal Prints</button>
-            <button class="btn1" onclick="toggleDocument('a4Prints')">A4 Prints</button>
-            <button class="btn1" onclick="toggleDocument('a5Prints')">A5 Prints</button>
+            <div
+              style="border: 1px solid #bdbcbc; padding-left: 17px; padding-top: 1%;  height: 50px;  border-radius: 11px; background-color: #ffffff;font-family: 'Comfortaa';">
+              <button class="btn1" onclick="toggleDocument('thermalPrints')">Thermal Prints</button>
+              <button class="btn1" onclick="toggleDocument('a4Prints')">A4 Prints</button>
+              <button class="btn1" onclick="toggleDocument('a5Prints')">A5 Prints</button>
+            </div>
+            <div id="thermalPrints" class="document-container show active">
+              <img data-platform="desktop" class="prints-img1" src="assets/img/Frame 49.png"
+                alt="Thermal Print in Billing Software" />
+            </div>
+
+            <div id="a4Prints" class="row  document-container">
+              <img data-platform="desktop" class="prints-img2" src="assets/img/image 1.png" alt="A4 Prints" />
+              <img data-platform="desktop" class="prints-img3" src="assets/img/image 1.png" alt="A4 Prints" />
+            </div>
+
+            <div id="a5Prints" class="document-container">
+              <img data-platform="desktop" class="prints-img4" src="assets/img/Frame 50.png" alt="A5 Prints" />
+              <img data-platform="desktop" class="prints-img5" src="assets/img/Frame 50.png" alt="A5 Prints" />
+            </div>
           </div>
-         <div id="thermalPrints" class="document-container">
-          <img data-platform="desktop" class="prints-img1" src="assets/img/Frame 49.png" alt="Thermal Print in Billing Software"  />
-        </div>
-
-        <div id="a4Prints" class="row  document-container">
-          <img data-platform="desktop" class="prints-img2" src="assets/img/image 1.png" alt="A4 Prints"  />
-          <img data-platform="desktop" class="prints-img3" src="assets/img/image 1.png" alt="A4 Prints"  />
-        </div>
-
-        <div id="a5Prints" class="document-container">
-          <img data-platform="desktop" class="prints-img4" src="assets/img/Frame 50.png" alt="A5 Prints"  />
-          <img data-platform="desktop" class="prints-img5" src="assets/img/Frame 50.png" alt="A5 Prints"  />
-        </div>
-        </div>
-          <img  loading="lazy" src="assets/img/circleLeft.png" class="img01" />
+          <img loading="lazy" src="assets/img/circleLeft.png" class="img01" />
           <img loading="lazy" src="assets/img/circleRight.png" class="img02" />
         </div>
       </section>
 
       <section id="super-power" class="section-container super-power-section1">
-        
+
         <div class="boundaries">
           <div class="super-power-container-boundaries">
             <div class="super-power-container-header-container-boundaries">
               <h2 class="super-power-container-header-boundaries">
                 <span class="color-brand">Without limitations, without boundaries!</span>
               </h2>
-              <div class="super-power-container-sub-header-boundaries">The best billing and accounting software is available for businesses to efficiently manage their finances. <br> Experience the trans-formative impact of ProBillings multi-faceted functionality for your business!"</div>
+              <div class="super-power-container-sub-header-boundaries">The best billing and accounting software is
+                available for businesses to efficiently manage their finances. <br> Experience the trans-formative
+                impact of ProBillings multi-faceted functionality for your business!"</div>
               <div class="super-power-container-sub-header-boundaries"></div>
             </div>
           </div>
-          <button class="boundaries-btn">Get Started 
-            
+          <button class="boundaries-btn">Get Started
+
           </button>
-       </div>
+        </div>
       </section>
-    
+
+      <!-- <section id="super-power" class="section-container super-power-section1">
+        <div class="super-power-container">
+          <div class="super-power-container-header-container">
+            <h2 class="super-power-container-header">
+              <span class="color-brand" style="margin-top: -50px;">"Maximize your business growth potential with <br>
+                our all-in-one billing software, increasing by 10x times!</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="Growth-div02">
+          <div class="Growth-prints">
+          <div style="border: 1px solid #E8EAEA; padding-left: 50px; padding-top: 1%;  height: 50px;  border-radius: 11px; background-color: #E8EAEA;">
+            <button class="Growth-btn1" onclick="toggleDocument('thermalPrints')">Billing</button>
+            <button class="Growth-btn1" onclick="toggleDocument('a4Prints')">Inventory Management</button>
+            <button class="Growth-btn1" onclick="toggleDocument('a5Prints')">Business Management</button>
+            <button class="Growth-btn1" onclick="toggleDocument('a5Prints')">Bonus Features</button>
+          </div>
+         <div id="thermalPrints" class="document-container">
+          <img data-platform="desktop" class="prints-img1" src="assets/img/Frame 49.png" alt="Thermal Print in Billing Software"  />
+        </div>
+        </section> -->
+
+      <section id="features-section" class="section-container features-section features-section-expanded">
+        <div class="features-section-container">
+          <div class="feature-message">
+            <h2 class="feature-message-row">
+              Maximize your business growth potential with
+            </h2>
+            <h2 class="feature-message-row">
+              our all-in-one billing software, <span class="feature-message-count">increasing by 10x times!</span>
+            </h2>
+          </div>
+
+          <div class="feature-options-box">
+            <div class="feature-options">
+              <div id="feature-biling-header" class="feature-option active" onclick="featureClicked('feature-biling')">
+                Billing</div>
+              <div id="feature-inventory-management-header" class="feature-option"
+                onclick="featureClicked('feature-inventory-management')">Inventory Management</div>
+              <div id="feature-business-management-header" class="feature-option"
+                onclick="featureClicked('feature-business-management')">Business Management</div>
+              <div id="feature-bonus-features-header" class="feature-option"
+                onclick="featureClicked('feature-bonus-features')">Bonus Features</div>
+            </div>
+
+            <div id="feature-biling" class="feature-show active">
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 11.png"
+                  alt="Automatic GST Bill Sharing on Whatsapp/SMS" src="assets/img/image 11.png">
+                <div>Multiple Bank Account</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/recover-deleted-invoices 2.png"
+                  alt="Sales &amp; Purchase Invoices, Expense Tracking" src="assets/img/recover-deleted-invoices 2.png">
+                <div>Recover Deleted Invoices</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 7.png"
+                  alt="Create Quotations/Estimates &amp; Proforma Invoices" src="assets/img/image 7.png">
+                <div>Bulk Upload / Edit</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 8.png"
+                  alt="Billing Software that works with/without internet" src="assets/img/image 8.png">
+                <div>Automated Billing</div>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/image 9.png" alt="POS Billing Software Free"
+                    src="assets/img/image 9.png">
+                  <div>Foreign Currency</div>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/audit trail.webp" alt="Create Delivery Challan"
+                    src="assets/img/audit trail.webp">
+                  <div>Audit Trail</div>
+                </a>
+              </div>
+            </div>
+
+
+            <div id="feature-inventory-management" class="feature-show">
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 11.png" alt="Inventory Management Software"
+                  src="assets/img/image 11.png">
+                <div>Multiple Bank Account</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 12.png"
+                  alt="Godown Management Billing Software" src="assets/img/image 12.png">
+                <div>Recover Deleted Invoices</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 13.png" alt="Product Batching Feature"
+                  src="assets/img/image 13.png">
+                <div>Bulk Upload / Edit</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 14.png"
+                  alt="Add Serial Number for easy product tracking" src="assets/img/image 14.png">
+                <div>Automated Billing</div>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/image 15.png" alt="Create and Print Barcodes"
+                    src="assets/img/image 15.png">
+                  <div>Foreign Currency</div>
+                </a>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 16.png"
+                  alt="Add custom fields for easy inventory management" src="assets/img/image 16.png">
+                <div>Audit Trail</div>
+              </div>
+            </div>
+
+
+            <div id="feature-business-management" class="feature-show feature-business-management">
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 17.png"
+                  alt="Access myBillBook on multiple devices" src="assets/img/image 17.png">
+                <div>Multiple Bank Account</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 21.png"
+                  alt="Manage Multiple Businesses with one Invoicing Software" src="assets/img/image 21.png">
+                <div>Recover Deleted Invoices</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 22.png"
+                  alt="Provide access to multiple users" src="assets/img/image 22.png">
+                <div>Bulk Upload / Edit</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 23.png" alt="Create different user roles"
+                  src="assets/img/image 23.png">
+                <div>Automated Billing</div>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/image 24.png"
+                    alt="Staff Attendance and Payroll Management" src="assets/img/image 24.png">
+                  <div>Foreign Currency</div>
+                </a>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 25.png"
+                  alt="Billing Software that Generates Business Reports for free" src="assets/img/image 25.png">
+                <div>Audit Trail</div>
+              </div>
+            </div>
+
+
+
+            <div id="feature-bonus-features" class="feature-show">
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/image 17.png"
+                    alt="Multiple Bank Account Management" src="assets/img/image 17.png">
+                  <div>Multiple Bank Account</div>
+                </a>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 20.png"
+                  alt="Recover Deleted Invoices for better Invoice Management" src="assets/img/image 20.png">
+                <div>Recover Deleted Invoices</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 8.png" alt="Bulk Upload/ Edit Invoices"
+                  src="assets/img/image 8.png">
+                <div>Bulk Upload/ Edit</div>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="feature" height="256" data-src="assets/img/image 18.png"
+                    alt="Automated Billing for recurring invoices" src="assets/img/image 18.png">
+                  <div>Automated Billing</div>
+                </a>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 141.png"
+                  alt="Create Invoices in Foreign Currency" src="assets/img/image 141.png">
+                <div>Foreign Currency</div>
+              </div>
+              <div>
+                <img class="feature" height="256" data-src="assets/img/image 121.png" alt="Track Invoice Edit History"
+                  src="assets/img/image 121.png">
+                <div>Audit Trail</div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="feature-options-box-mobile">
+            <div class="feature-options-box-option">
+              <img data-src="/static-assets/images/landing-page-v2/billing.webp" alt="Billing" width="80" height="80"
+                src="/static-assets/images/landing-page-v2/billing.webp">
+              Billing
+            </div>
+            <div class="feature-options-box-option">
+              <img data-src="/static-assets/images/landing-page-v2/inventory-management.webp" alt="Inventory Management"
+                width="80" height="80" src="/static-assets/images/landing-page-v2/inventory-management.webp">
+              Inventory Management
+            </div>
+            <div class="feature-options-box-option">
+              <img data-src="/static-assets/images/landing-page-v2/business-management.webp" alt="Business Management"
+                width="80" height="80" src="/static-assets/images/landing-page-v2/business-management.webp">
+              Business Management
+            </div>
+            <div class="feature-options-box-option">
+              <img data-src="/static-assets/images/landing-page-v2/gst-accounting.webp" alt="GST Accounting" width="80"
+                height="80" src="/static-assets/images/landing-page-v2/gst-accounting.webp">
+              GST Accounting
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       <section id="super-power" class="section-container super-power-section1">
         <div class="super-power-container">
           <div class="super-power-container-header-container">
@@ -372,129 +611,105 @@
             </h2>
           </div>
         </div>
-         <div class="Compliance">
-        <div class="Compliance-2">
-          <div class="Compliance-3">
-            <div class="column">
-              <div class="Compliance-4">
-                <div onclick="showDiv(1)"  class="Compliance-5">GSTR Filing</div>
-                <div onclick="showDiv(2)" class="Compliance-6">E-Invoicing</div>
-                <div onclick="showDiv(3)" class="Compliance-7">E-way Billing</div>
-                <div onclick="showDiv(4)" class="Compliance-8">Data Export to Tally</div>
+        <div class="Compliance">
+          <div class="Compliance-2">
+            <div class="Compliance-3">
+              <div class="column">
+                <div class="Compliance-4">
+                  <div onclick="showDiv(1)" class="Compliance-5">GSTR Filing</div>
+                  <div onclick="showDiv(2)" class="Compliance-6">E-Invoicing</div>
+                  <div onclick="showDiv(3)" class="Compliance-7">E-way Billing</div>
+                  <div onclick="showDiv(4)" class="Compliance-8">Data Export to Tally</div>
+                </div>
               </div>
-            </div>
 
 
-            <div class="column-2" id="div1">
-              <div class="Compliance-9">
-                <img
-                  loading="lazy"
-                  src="assets/img/image 1.png"
-                  class="Compliance-img"
-                />
-                <div class="Compliance-10">
-                  <div class="Compliance-11">
-                    Export your GSTR1 data in a simple format (JSON) and easily file
-                    your GST returns
-                    <br />
-                    for hassle-free accounting.
-                  </div>
-                  <div class="Compliance-12">
-                    <div class="dCompliance iv-13">Get Started</div>
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
-                      class="Compliance-img2"
-                    />
+              <div class="column-2" id="div1">
+                <div class="Compliance-9">
+                  <img loading="lazy" src="assets/img/image 1.png" class="Compliance-img" />
+                  <div class="Compliance-10">
+                    <div class="Compliance-11">
+                      Export your GSTR1 data in a simple format (JSON) and easily file
+                      your GST returns
+                      for hassle-free accounting.
+                    </div>
+                    <div class="Compliance-12">
+                      <div class="dCompliance iv-13">Get Started</div>
+                      <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                        class="Compliance-img2" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="column-2" id="div2" style="display: none;">
-              <div class="Compliance-9">
-                <img
-                  loading="lazy"
-                  src="assets/img/Screenshot 2024-04-25 182918.png"
-                  class="Compliance-img"
-                />
-                <div class="Compliance-10">
-                  <div class="Compliance-11">
-                  Efficiently generate e-Invoices in a single click with automatic GATR1 reconciliation ,
-                   and conveniently cancel e-Invoices directly through myBillBook for seamless e-Invoicing.
-                  </div>
-                  <div class="Compliance-12">
-                    <div class="dCompliance iv-13">Get Started</div>
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
-                      class="Compliance-img2"
-                    />
+              <div class="column-2" id="div2" style="display: none;">
+                <div class="Compliance-9">
+                  <img loading="lazy" src="assets/img/Screenshot 2024-04-25 182918.png" class="Compliance-img" />
+                  <div class="Compliance-10">
+                    <div class="Compliance-11">
+                      Efficiently generate e-Invoices in a single click with automatic GATR1 reconciliation ,
+                      and conveniently cancel e-Invoices directly through myBillBook for seamless e-Invoicing.
+                    </div>
+                    <div class="Compliance-12">
+                      <div class="dCompliance iv-13">Get Started</div>
+                      <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                        class="Compliance-img2" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="column-2" id="div3" style="display: none;">
-              <div class="Compliance-9">
-                <img
-                  loading="lazy"
-                  src="assets/img/Frame 491.png"
-                  class="Compliance-img"
-                />
-                <div class="Compliance-10">
-                  <div class="Compliance-11">
-                    Easily generate and download E-way bills in less then  30 seconds by adding vehicle details for smooth transportation.
-                   
-                  </div>
-                  <div class="Compliance-12">
-                    <div class="dCompliance iv-13">Get Started</div>
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
-                      class="Compliance-img2"
-                    />
+              <div class="column-2" id="div3" style="display: none;">
+                <div class="Compliance-9">
+                  <img loading="lazy" src="assets/img/Frame 491.png" class="Compliance-img" />
+                  <div class="Compliance-10">
+                    <div class="Compliance-11">
+                      Easily generate and download E-way bills in less then 30 seconds by adding vehicle details for
+                      smooth transportation.
+
+                    </div>
+                    <div class="Compliance-12">
+                      <div class="dCompliance iv-13">Get Started</div>
+                      <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                        class="Compliance-img2" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="column-2" id="div4" style="display: none;">
-              <div class="Compliance-9">
-                <img
-                  loading="lazy"
-                  src="assets/img/Screenshot 2024-04-25 183006.png"
-                  class="Compliance-img"
-                />
-                <div class="Compliance-10">
-                  <div class="Compliance-11">
-                    Export your GSTR1 data in a simple format (JSON) and easily file
-                    your GST returns
-                    <br />
-                    for hassle-free accounting.
-                  </div>
-                  <div class="Compliance-12">
-                    <div class="dCompliance iv-13">Get Started</div>
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
-                      class="Compliance-img2"
-                    />
+              <div class="column-2" id="div4" style="display: none;">
+                <div class="Compliance-9">
+                  <img loading="lazy" src="assets/img/Screenshot 2024-04-25 183006.png" class="Compliance-img" />
+                  <div class="Compliance-10">
+                    <div class="Compliance-11">
+                      Export your GSTR1 data in a simple format (JSON) and easily file
+                      your GST returns
+                      <br />
+                      for hassle-free accounting.
+                    </div>
+                    <div class="Compliance-12">
+                      <div class="dCompliance iv-13">Get Started</div>
+                      <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfe12396fefa1389ddc973f446f825ae4291f4cb1e17a5c5c35fc3f4c39a58f7?"
+                        class="Compliance-img2" />
+                    </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
-
-
           </div>
-        </div>
         </div>
       </section>
       <style>
-        .Compliance{
+        .Compliance {
           border-radius: 10px;
           background-color: rgba(0, 76, 140, 0.1);
           display: flex;
@@ -504,24 +719,28 @@
           flex-direction: column;
           padding: 17px 35px 38px;
         }
+
         @media (max-width: 991px) {
-          .Compliance  {
+          .Compliance {
             max-width: 100%;
             margin-top: 40px;
             padding: 0 20px;
           }
         }
-        .Compliance-2 {
-        }
+
+        /* .Compliance-2 {} */
+
         @media (max-width: 991px) {
           .Compliance-2 {
             max-width: 100%;
           }
         }
+
         .Compliance-3 {
           gap: 20px;
           display: flex;
         }
+
         @media (max-width: 991px) {
           .Compliance-3 {
             flex-direction: column;
@@ -529,6 +748,7 @@
             gap: 0px;
           }
         }
+
         .column {
           display: flex;
           flex-direction: column;
@@ -536,11 +756,13 @@
           width: 23%;
           margin-left: 0px;
         }
+
         @media (max-width: 991px) {
           .column {
             width: 100%;
           }
         }
+
         .Compliance-4 {
           display: flex;
           flex-grow: 1;
@@ -551,11 +773,13 @@
           text-align: center;
           line-height: 150%;
         }
+
         @media (max-width: 991px) {
           .Compliance-4 {
             margin-top: 21px;
           }
         }
+
         .Compliance-5 {
           font-family: Comfortaa, sans-serif;
           border-radius: 14.317px;
@@ -564,12 +788,15 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
+          width: 278.7px;
         }
+
         @media (max-width: 991px) {
           .Compliance-5 {
             padding: 0 20px;
           }
         }
+
         .Compliance-6 {
           font-family: Comfortaa, sans-serif;
           border-radius: 14.317px;
@@ -580,13 +807,16 @@
           white-space: nowrap;
           justify-content: center;
           padding: 40px 60px;
+          width: 278.7px;
         }
+
         @media (max-width: 991px) {
           .Compliance-6 {
             white-space: initial;
             padding: 0 20px;
           }
         }
+
         .Compliance-7 {
           font-family: Comfortaa, sans-serif;
           border-radius: 14.317px;
@@ -596,12 +826,15 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
+          width: 278.7px;
         }
+
         @media (max-width: 991px) {
           .Compliance-7 {
             padding: 0 20px;
           }
         }
+
         .Compliance-8 {
           font-family: Comfortaa, sans-serif;
           border-radius: 14.317px;
@@ -610,12 +843,15 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
+          width: 334.7px;
         }
+
         @media (max-width: 991px) {
           .Compliance-8 {
             padding: 0 20px;
           }
         }
+
         .column-2 {
           display: flex;
           flex-direction: column;
@@ -623,11 +859,13 @@
           width: 77%;
           margin-left: 20px;
         }
+
         @media (max-width: 991px) {
           .column-2 {
             width: 100%;
           }
         }
+
         .Compliance-9 {
           border-radius: 14.317px;
           box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
@@ -636,14 +874,17 @@
           flex-grow: 1;
           padding-top: 12px;
           flex-direction: column;
-          width: 100%;
+          width: 152%;
+          margin-left: -308px;
         }
+
         @media (max-width: 991px) {
           .Compliance-9 {
             max-width: 100%;
             margin-top: 22px;
           }
         }
+
         .Compliance-img {
           aspect-ratio: 1.15;
           object-fit: auto;
@@ -652,6 +893,7 @@
           align-self: center;
           max-width: 100%;
         }
+
         .Compliance-10 {
           border-radius: 0px 0px 14.317px 14.317px;
           background-color: rgba(59, 177, 97, 0.2);
@@ -660,21 +902,25 @@
           align-items: start;
           padding: 18px 80px 6px 30px;
         }
+
         @media (max-width: 991px) {
           .Compliance-10 {
             max-width: 100%;
             padding: 0 20px;
           }
         }
+
         .Compliance-11 {
           color: #151515;
           font: 500 19px/34px Comfortaa, sans-serif;
         }
+
         @media (max-width: 991px) {
           .Compliance-11 {
             max-width: 100%;
           }
         }
+
         .Compliance-12 {
           border-radius: 14.317px;
           box-shadow: 0px 0px 3.818px 0px rgba(0, 0, 0, 0.25);
@@ -688,17 +934,20 @@
           line-height: 150%;
           padding: 18px 31px;
         }
+
         @media (max-width: 991px) {
           .Compliance-12 {
             padding: 0 20px;
           }
         }
+
         .Compliance-13 {
           font-family: Comfortaa, sans-serif;
           flex-grow: 1;
           flex-basis: auto;
           margin: auto 0;
         }
+
         .Compliance-img2 {
           aspect-ratio: 0.68;
           object-fit: auto;
@@ -707,7 +956,7 @@
           fill: #fff;
         }
       </style>
-      
+
 
       <section id="super-power" class="section-container super-power-section1">
 
@@ -720,68 +969,69 @@
           </div>
         </div>
 
-        <img src="assets/img/Group 755.png" alt="">
+        <!-- <img src="assets/img/Group 755.png" alt=""> -->
 
-        <!-- <div class="customers">
+        <div class="customers">
           <div class="customers-2">
             <div class="column">
               <div class="customers-3">
                 <div class="customers-4">
+
                   <div class="customers-5">
-                    <img
-                      loading="lazy"
-                      src=""
-                      class="customers-img"
-                    />
+                    <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back">
+                    <img loading="lazy" src="assets/img/Vector (10).png" class="customers-img" />
                     <div class="customers-6">
                       WhatsApp & SMS
                       <br />
                       Marketing
                     </div>
                   </div>
+
                   <div class="customers-7">
-                    <img
-                      loading="lazy"
-                      srcset="..."
-                      class="customers-img1"
-                    />
+                    <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back1">
+                    <img loading="lazy" src="assets/img/Group (8).png" class="customers-img1" />
                     <div class="customers-8">
                       Loyalty & Rewards
                       <br />
                       Program
                     </div>
                   </div>
+
                 </div>
+
+
                 <div class="customers-9">
                   <div class="customers-10">
                     <div class="column-2">
                       <div class="dcustomersiv-11">
+
                         <div class="customers-12">
-                          <img
-                            loading="lazy"
-                            srcset="..."
-                            class="customers-img2"
-                          />
-                          <div class="customers-13">Online Store & Digital Catalogue</div>
+                          <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back2">
+                          <img loading="lazy" src="assets/img/Group (10).png" class="customers-img2" />
+                          <div class="customers-13">
+                            Online Store & Digital
+                            <br />
+                            Catalogue
+                          </div>
                         </div>
+
                         <div class="customers-14">
-                          <img
-                            loading="lazy"
-                            srcset="..."
-                            class="customers-img3"
-                          />
-                          <div class="customers-15">Service Reminders & CRM</div>
+                          <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back3">
+                          <img loading="lazy" src="assets/img/Group (9).png" class="customers-img3" />
+                          <div class="customers-15">Service Reminders
+                            <br />
+                            & CRM
+                          </div>
                         </div>
+
                       </div>
                     </div>
+
                     <div class="column-3">
                       <div class="customers-16">
                         <div class="customers-17">
-                          <img
-                            loading="lazy"
-                            srcset="..."
-                            class="customers-img4"
-                          />
+                          <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back4">
+                          <img loading="lazy" src="assets/img/Group (7).png" class="customers-img4" />
                           <div class="customers-18">
                             Personalized
                             <br />
@@ -789,12 +1039,12 @@
                           </div>
                         </div>
                         <div class="customers-19">
-                          <img
-                            loading="lazy"
-                            srcset="..."
-                            class="customers-img5"
-                          />
-                          <div class="customers-20">Professional Business Cards</div>
+                          <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back5">
+                          <img loading="lazy" src="assets/img/Group (6).png" class="customers-img5" />
+                          <div class="customers-20">Professional
+                            <br />
+                            Business Cards
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -802,45 +1052,69 @@
                 </div>
               </div>
             </div>
+
+
             <div class="column-4">
               <div class="customers-21">
                 <div class="customers-22">
-                  <img
-                    loading="lazy"
-                    srcset="..."
-                    class="customersimg"
-                  />
+                  <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back6">
+                  <img loading="lazy" src="assets/img/Group (8).png" class="customers-img6" />
                   <div class="customers-23">
                     Loyalty & Rewards
                     <br />
                     Program
                   </div>
                 </div>
+
                 <div class="customers-24">
-                  <img
-                    loading="lazy"
-                    srcset="..."
-                    class="customers-img6"
-                  />
+                  <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back7">
+                  <img loading="lazy" src="assets/img/Group (7).png" class="customers-img7" />
                   <div class="customers-25">
                     Personalized
                     <br />
                     Greetings
                   </div>
                 </div>
+
                 <div class="customers-26">
-                  <img
-                    loading="lazy"
-                    srcset="..."
-                    class="customers-img7"
-                  />
-                  <div class="customers-27">Professional Business Cards</div>
+                  <img loading="lazy" src="assets/img/Rectangle 128.png" class="cust-back8">
+                  <img loading="lazy" src="assets/img/Group (6).png" class="customers-img8" />
+                  <div class="customers-27">Professional
+                    <br />
+                    Business Cards
+                  </div>
                 </div>
+
               </div>
             </div>
+
           </div>
-        </div> -->
+        </div>
+
         <style>
+          .customers-img8 {
+            aspect-ratio: 0.98;
+            object-fit: auto;
+            object-position: center;
+            width: 40px;
+            height: 41.88px;
+            border-radius: 10px;
+            margin-left: -90px;
+            margin-top: 8px;
+          }
+
+          .cust-back5 {
+            margin-left: -80px;
+          }
+
+          .cust-back4 {
+            margin-left: -80px;
+          }
+
+          .cust-back1 {
+            margin-left: 249px;
+          }
+
           .customers {
             border-radius: 10px;
             background-color: rgba(59, 177, 97, 0.15);
@@ -849,16 +1123,19 @@
             max-width: 100%;
             padding: 15px 49px 27px;
           }
+
           @media (max-width: 991px) {
             .customers {
               margin-top: 40px;
               padding: 0 20px;
             }
           }
+
           .customers-2 {
             gap: 20px;
             display: flex;
           }
+
           @media (max-width: 991px) {
             .customers-2 {
               flex-direction: column;
@@ -866,6 +1143,7 @@
               gap: 0px;
             }
           }
+
           .column {
             display: flex;
             flex-direction: column;
@@ -873,22 +1151,26 @@
             width: 76%;
             margin-left: 0px;
           }
+
           @media (max-width: 991px) {
             .column {
               width: 100%;
             }
           }
+
           .customers-3 {
             display: flex;
             flex-grow: 1;
             flex-direction: column;
           }
+
           @media (max-width: 991px) {
             .customers-3 {
               max-width: 100%;
               margin-top: 40px;
             }
           }
+
           .customers-4 {
             display: flex;
             width: 100%;
@@ -898,42 +1180,67 @@
             font-weight: 600;
             line-height: 28px;
           }
+
           @media (max-width: 991px) {
             .customers-4 {
               max-width: 100%;
               flex-wrap: wrap;
             }
           }
+
           .customers-5 {
             display: flex;
             gap: 20px;
             justify-content: space-between;
-            flex: 1;
+            flex: -2;
           }
+
           .customers-img {
             aspect-ratio: 1;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 32px;
+            height: 39px;
             border-radius: 10px;
+            margin-left: -63px;
+            margin-top: 10px;
           }
+
+          .customers-img1 {
+            aspect-ratio: 1;
+            object-fit: auto;
+            object-position: center;
+            width: 32px;
+            height: 39px;
+            border-radius: 10px;
+            margin-left: -91px;
+            margin-top: 10px;
+          }
+
           .customers-6 {
-            font-family: Comfortaa, sans-serif;
+            font-family: 'Comfortaa';
             margin: auto 0;
+            margin-left: 18px;
+
           }
+
           .customers-7 {
             display: flex;
             gap: 20px;
             justify-content: space-between;
             flex: 1;
           }
+
           .customers-8 {
-            font-family: Comfortaa, sans-serif;
+            font-family: 'Comfortaa';
             margin: auto 0;
+            width: 341px;
           }
+
           .customers-9 {
             margin-top: 140px;
           }
+
           @media (max-width: 991px) {
             .customers-9 {
               max-width: 100%;
@@ -941,10 +1248,12 @@
               margin-top: 40px;
             }
           }
+
           .customers-10 {
             gap: 20px;
             display: flex;
           }
+
           @media (max-width: 991px) {
             .customers-10 {
               flex-direction: column;
@@ -952,6 +1261,7 @@
               gap: 0px;
             }
           }
+
           .column-2 {
             display: flex;
             flex-direction: column;
@@ -959,11 +1269,13 @@
             width: 62%;
             margin-left: 0px;
           }
+
           @media (max-width: 991px) {
             .column-2 {
               width: 100%;
             }
           }
+
           .customers-11 {
             display: flex;
             flex-grow: 1;
@@ -973,50 +1285,66 @@
             font-weight: 600;
             line-height: 28px;
           }
+
           @media (max-width: 991px) {
             .customers-11 {
               margin-top: 40px;
             }
           }
+
           .customers-12 {
             display: flex;
             gap: 20px;
             justify-content: space-between;
           }
+
           .customers-img2 {
-            aspect-ratio: 0.98;
+            aspect-ratio: 1;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 38.85px;
+            height: 39px;
             border-radius: 10px;
+            margin-left: -94px;
+            margin-top: 10px;
           }
+
           .customers-13 {
             font-family: Comfortaa, sans-serif;
-            width: 254px;
+            width: 487px;
             margin: auto 0;
           }
+
           .customers-14 {
             display: flex;
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
           }
+
           @media (max-width: 991px) {
             .customers-14 {
               margin-top: 40px;
             }
           }
+
           .customers-img3 {
-            aspect-ratio: 0.98;
+            aspect-ratio: 1;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 44.02px;
+            height: 35.86px;
             border-radius: 10px;
+            margin-left: -90px;
+            margin-top: 16px;
           }
+
           .customers-15 {
             font-family: Comfortaa, sans-serif;
             margin: auto 0;
+            width: 487px;
           }
+
           .column-3 {
             display: flex;
             flex-direction: column;
@@ -1024,11 +1352,13 @@
             width: 38%;
             margin-left: 20px;
           }
+
           @media (max-width: 991px) {
             .column-3 {
               width: 100%;
             }
           }
+
           .customers-16 {
             display: flex;
             flex-grow: 1;
@@ -1038,49 +1368,66 @@
             font-weight: 600;
             line-height: 28px;
           }
+
           @media (max-width: 991px) {
             .customers-16 {
               margin-top: 40px;
             }
           }
+
           .customers-17 {
             display: flex;
             gap: 20px;
             justify-content: space-between;
           }
+
           .customers-img4 {
             aspect-ratio: 0.98;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 38.88px;
+            height: 39.01px;
             border-radius: 10px;
+            margin-left: -94px;
+            margin-top: 10px;
           }
+
           .customers-18 {
-            font-family: Comfortaa, sans-serif;
+            font-family: 'Comfortaa';
             margin: auto 0;
+            width: 341px;
           }
+
           .customers-19 {
             display: flex;
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
           }
+
           @media (max-width: 991px) {
             .customers-19 {
               margin-top: 40px;
             }
           }
+
           .customers-img5 {
             aspect-ratio: 0.98;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 40px;
+            height: 41.88px;
             border-radius: 10px;
+            margin-left: -91px;
+            margin-top: 9px;
           }
+
           .customers-20 {
             font-family: Comfortaa, sans-serif;
             margin: auto 0;
+            width: 343px;
           }
+
           .column-4 {
             display: flex;
             flex-direction: column;
@@ -1088,11 +1435,13 @@
             width: 24%;
             margin-left: 20px;
           }
+
           @media (max-width: 991px) {
             .column-4 {
               width: 100%;
             }
           }
+
           .customers-21 {
             display: flex;
             flex-grow: 1;
@@ -1102,69 +1451,96 @@
             font-weight: 600;
             line-height: 28px;
           }
+
           @media (max-width: 991px) {
             .customers-21 {
               margin-top: 40px;
             }
           }
+
           .customers-22 {
             display: flex;
             gap: 20px;
             justify-content: space-between;
           }
+
           .customers-23 {
             font-family: Comfortaa, sans-serif;
             margin: auto 0;
+            width: 218px;
           }
+
           .customers-24 {
             display: flex;
             margin-top: 140px;
             gap: 20px;
             justify-content: space-between;
           }
+
           @media (max-width: 991px) {
             .customers-24 {
               margin-top: 40px;
             }
           }
+
           .customers-img6 {
             aspect-ratio: 0.98;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            width: 35px;
+            height: 39px;
             border-radius: 10px;
+            margin-left: -86px;
+            margin-top: 10px;
           }
+
           .customers-25 {
-            font-family: Comfortaa, sans-serif;
+            font-family: 'Comfortaa';
             margin: auto 0;
+            width: 221px;
           }
+
           .customers-26 {
             display: flex;
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
           }
+
           @media (max-width: 991px) {
             .customers-26 {
               margin-top: 40px;
             }
           }
+
           .customers-img7 {
             aspect-ratio: 0.98;
             object-fit: auto;
             object-position: center;
-            width: 65px;
+            margin-left: -85px;
+            width: 38.88px;
+            height: 39.01px;
+            margin-top: 9px;
             border-radius: 10px;
           }
+
           .customers-27 {
-            font-family: Comfortaa, sans-serif;
+            font-family: 'Comfortaa';
             margin: auto 0;
+            width: 215px;
           }
         </style>
-        
-
 
       </section>
+
+      <!-- <img src="assets/img/Group 765.png" alt=""> -->
+      <div class="super-power-container-pocket">
+        <div class="super-power-container-header-container-pocket">
+          <h2 class="super-power-container-header-pocket">
+            <span class="color-brand">Supporting Businesses from a wide range of industries</span>
+          </h2>
+        </div>
+      </div>
 
 
       <div class="login-backdrop d-none-imp" id="login_backdrop_id"></div>
@@ -1175,36 +1551,55 @@
         </div>
       </div>
 
+
       <script>
         function toggleDocument(documentId) {
           var documents = document.querySelectorAll('.document-container');
           var buttons = document.querySelectorAll('.btn1');
-          
-          documents.forEach(function(document) {
+
+          documents.forEach(function (document) {
             document.classList.remove('active');
           });
-          
-          buttons.forEach(function(button) {
+
+          buttons.forEach(function (button) {
             button.classList.remove('active');
           });
-          
+
           var activeDocument = document.getElementById(documentId);
           activeDocument.classList.add('active');
-          
+
           var activeButton = document.querySelector('[onclick="toggleDocument(\'' + documentId + '\')"]');
           activeButton.classList.add('active');
         }
 
-            function showDiv(divNum) {
-        // Hide all divs
-        for (var i = 1; i <= 4; i++) {
+        function showDiv(divNum) {
+          // Hide all divs
+          for (var i = 1; i <= 4; i++) {
             document.getElementById('div' + i).style.display = 'none';
-        }
+          }
 
-        // Show the selected div
-        document.getElementById('div' + divNum).style.display = 'block';
-    }
-        </script>
+          // Show the selected div
+          document.getElementById('div' + divNum).style.display = 'block';
+        }
+      </script>
+
+      <script>
+        function featureClicked(featureId) {
+          // Remove active class from all headers
+          document.querySelectorAll('.feature-option').forEach(function (element) {
+            element.classList.remove('active');
+          });
+          // Add active class to the clicked header
+          document.getElementById(featureId + '-header').classList.add('active');
+
+          // Hide all feature sections
+          document.querySelectorAll('.feature-show').forEach(function (element) {
+            element.classList.remove('active');
+          });
+          // Show the clicked feature section
+          document.getElementById(featureId).classList.add('active');
+        }
+      </script>
 </body>
 
 </html>
