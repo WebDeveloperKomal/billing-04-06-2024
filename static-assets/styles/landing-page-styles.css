@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 body {
   font-family: 'Comfortaa';
 }
@@ -704,7 +706,7 @@ body {
 .hero-container .input-button-container .country-code-placeholder,
 .start-using-section .input-button-container .country-code-placeholder {
   position: absolute;
-  left: 24px;
+  left: 36px;
   top: 50%;
   transform: translateY(-50%);
   font-family: 'Comfortaa';
@@ -725,6 +727,7 @@ body {
   line-height: 24px;
   padding: 0;
   border: none;
+  padding-left: 14px;
 }
 
 .hero-container .input-button-container .log-reg-btn,
@@ -745,6 +748,12 @@ body {
   font-weight: 400;
   line-height: 24px;
   z-index: 100;
+}
+
+.india {
+  position: absolute;
+  margin-left: -57px;
+  padding-top: 13px;
 }
 
 .hero-container-column-1-ab .input-button-container {
@@ -3320,3 +3329,7 @@ h3 {
 /* .buttons button.active {
   background-color: ;
 } */
+
+
+
+/* ---------------------------- */
