@@ -3334,3 +3334,61 @@ h3 {
 
 
 /* ---------------------------- */
+
+
+/* footer css start */
+/* .footer {
+  border-radius: 10px;
+  background-color: rgba(59, 177, 97, 0.15);
+  margin-top: 6px;
+  width: 1440px;
+  height: 500px;
+  max-width: 100%;
+  padding: 15px 49px 27px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.footer-logo {
+  width: 183px;
+  height: 80.2px;
+  padding-left: 38px;
+  padding-top: 20px;
+}
+
+.footer-img {
+  width: 394px;
+  height: 236px;
+  padding-top: 116px;
+  padding-left: 49px;
+} */
+
+/* .footer-section{
+  padd
+} */
+/* 
+.footer-section h4 {
+  margin-bottom: 30px;
+  font-family: 'Comfortaa';
+  font-size: 19.32px;
+  color: black;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: 151515;
+  text-decoration: none;
+  font-family: 'Comfortaa';
+} */
+
+
+/* footer css end */
