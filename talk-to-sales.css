@@ -247,6 +247,14 @@ h2 {
     /* Remove default border styles */
 }
 
+.cross {
+    width: 13px;
+    height: 12px;
+    padding-left: 500px;
+    margin-top: -59px;
+    position: absolute;
+}
+
 @media (max-width: 768px) {
 
     /* Adjust padding and margin for smaller screens */
